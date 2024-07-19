@@ -1,0 +1,228 @@
+:root {
+    --Main-yellow: #fef849;
+    --sec-color: #7DBAF7;
+    --bg:#222;
+    --font:"Edu AU VIC WA NT Hand", cursive;;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--bg);
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--Main-yellow);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+}
+
+.text-yellow{
+    color: var(--Main-yellow)!important;
+}
+.text-sec-color{
+    color: var(--sec-color)!important;
+}
+
+.fonts{
+    font-family: var(--font)!important;
+}
+
+.logo {
+    width: 75px;
+    height: 70px;
+}
+
+.nav-color{
+    background-color: var(--bg);
+}
+
+.center-ul li a {
+    color: var(--Main-yellow);
+    font-family: var(--font);
+    font-weight: 500;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.center-ul li a:hover{
+    color: #fef84990!important;
+}
+
+.center-ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: 3px;
+    left: -120px;
+    width: 100%;
+    height: 3px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    background-color: white;
+}
+
+.center-ul li a:hover::after {
+    left: 0px;
+}
+
+.welcome{
+    color: var(--Main-yellow)!important;
+    font-family: var(--font);
+}
+
+.first-sec{
+    overflow: hidden;
+}
+.first-sec >div{
+    position: relative;
+}
+
+.khas{
+    position: absolute;
+    top: 10px;
+    left: -390px;
+}
+
+.tomato{
+    position: absolute;
+    top: 0px;
+    right: -430px;
+}
+
+.felfel{
+    position: absolute;
+    bottom: 30px;
+    right: -170px;
+}
+
+.our-menu {
+    display: inline-block;
+    font-family: var(--font) !important;
+    font-weight: 900!important;
+    padding: 14px 32px 12px !important;
+    color: var(--sec-color)!important;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.our-menu:hover:before {
+    height: 100%;
+    width: 100%;
+}
+
+.our-menu:hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+.our-menu:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid var(--Main-yellow);
+    border-top: 2px solid var(--Main-yellow);
+    content: "";
+    z-index: -1;
+    -webkit-transition: all, 0.7s;
+    -o-transition: all, 0.7s;
+    transition: all, 0.7s;
+}
+
+.our-menu:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    border-right: 2px solid var(--Main-yellow);
+    border-bottom: 2px solid var(--Main-yellow);
+    content: "";
+    z-index: -1;
+    -webkit-transition: all, 0.7s;
+    -o-transition: all, 0.7s;
+    transition: all, 0.7s;
+}
+
+.icon-bg{
+    background-color: var(--Main-yellow);
+    padding: 5px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+footer{
+    background: var(--bg)!important;
+}
+
+@media screen and (max-width: 340px) {
+    .map {
+        overflow: hidden;
+        margin-bottom: 25px;
+        }
+    .navbar-toggler {
+        background-color: white !important;
+    }
+    .center-ul li a::after{
+        display: none;
+    }
+    .mazen{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .map {
+    overflow: hidden;
+    margin-bottom: 25px;
+    }
+    .navbar-toggler {
+    background-color: white!important;
+    }
+    .center-ul li a::after{
+        display: none;
+    }
+    .mazen{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .map {
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+    .navbar-toggler {
+        background-color: white!important;
+    }
+    .center-ul li a::after{
+        display: none;
+    }
+    .mazen{
+        font-size: small;
+    }
+}
